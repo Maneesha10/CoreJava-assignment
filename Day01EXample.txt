@@ -1,0 +1,197 @@
+1)Declare three number variables with value as 12,25,89 find the greatest number and display. 
+
+package com.sonata;
+
+public class GreatNum {
+	public static void main(String args[]) {
+		int a=12,b=25,c=89;
+		if(a>b && a>c  )
+		{
+			System.out.println("a is greater and the number is"+a);
+		}
+		else if(b>a && b>c)
+		{
+			System.out.println("bis greater and the number is"+b);
+
+		}
+		else 
+		{
+			System.out.println("c is greater and the number is"+c);
+
+		}
+			
+		
+	}
+	
+}
+
+2)Write a program in java to display the first 10 natural numbers. Expected output is 1 to 10 numbers 
+
+package com.sonata;
+
+public class NaturalNum {
+	public static void main(String[] args) {
+		int n=10;
+		System.out.println("the first ten natural numbers are:");
+		for(int i=1;i<=n;i++)
+		{
+			System.out.println(i);
+		}
+
+	}
+
+}
+
+3)Write a java program to display the cube of the given number for ex: if given number is 2 then cube of it is 8
+
+package com.sonata;
+
+public class CubeOfNumber {
+
+	public static void main(String[] args) {
+		int n=2;
+		int cube=n*n*n;
+		System.out.println("cube of number is:"+cube);
+
+	}
+
+}
+
+4)Write a java program to sum values of an array. For example a[5] ={1,2,3,4,5,6} the sum of the values is 21. 
+
+package com.sonata;
+
+public class SumOfArray {
+
+	public static void main(String[] args) {
+		int a[]= {1,2,3,4,5,6};
+		int sum=0;
+		for(int i=0;i<a.length;i++) {
+			sum=sum+a[i];
+			}
+		System.out.println("Sum of array elements are:"+sum);
+     }
+}
+
+5)Write a java program to test if an array contains a specific value 
+
+package com.sonata;
+
+public class SearchArrElement {
+
+	public static void main(String[] args) {
+		int arr[] ={5,10,14,21,23};
+		int search=2;
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i]==search) {
+				System.out.println("Search element is:"+arr[i]);
+			}
+		}
+		
+	}
+
+}
+
+6)Write a java program to reverse an array of integer values. 
+
+package com.sonata;
+
+ public class ReveseArray {
+	public static void main(String arg[]) {
+	int arr[]=new int[] {1,2,3,4,5};
+	for(int i=arr.length-1;i>=0;i--)
+	{
+		System.out.println(arr[i]);
+	}
+     }
+
+}
+
+7)Read the String and replace Ovals with dollar symbol program 
+
+package com.sonata;
+
+public class ReplaceVowel {
+
+	public static void main(String[] args) {
+		String s="Hello world";
+		s=s.replaceAll("a", "\\$");
+		s=s.replaceAll("e", "\\$");
+		s=s.replaceAll("i", "\\$");
+		s=s.replaceAll("o", "\\$");
+		s=s.replaceAll("u", "\\$");
+	System.out.println(s);
+	}
+}
+
+8)Write a program to identify duplicate values in an array 
+
+package com.sonata;
+
+public class DuplicateValues {
+
+	public static void main(String[] args) {
+		int arr[]=new int[] {1,2,2,3,4,3,1,5,5};
+		System.out.println("Duplicate values are:");
+		for(int i=0;i<arr.length;i++) {
+			for(int j=i+1;j<arr.length;j++) {
+				if(arr[i]==arr[j]) {
+					System.out.println(arr[j]);
+				}
+			}
+		}
+	}
+}
+
+9)Read the highest count of duplicates from array of integers 
+package com.sonata;
+
+public class HighDuplicateValues {
+
+	public static void main(String arg[]) {
+		int count =0;
+		int arr[]= {1,2,3,4,3,5,7,8,7};
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=i+1;j<arr.length;j++) 
+			{
+				if(arr[i]==arr[j])
+				{
+					count++;
+					break;
+				}
+			}			
+		}
+		System.out.println("the count od duplicate number is"+count);
+	}
+}
+
+10)Write a program to identify 2 large numbers in an array. 
+
+public class IdentifyTwoLargeNumbers {
+	public static void main(String arg[]) {
+		int[] arrValues = {5,8,12,65,3};
+		int largestNum1 = 0;
+		int largestNum2 = 0;
+		
+		for(int i=0; i<arrValues.length; i++) {
+			if(largestNum1 <arrValues[i]) {
+				largestNum2 = largestNum1;
+				largestNum1 = arrValues[i];
+				
+			}else if (largestNum2 < arrValues[i]) {
+				largestNum2 = arrValues[i];
+			}
+		
+		}
+		System.out.println("First Largest Number:" +largestNum1);
+		System.out.println("Second Largest Number:" +largestNum2);
+		
+	}
+
+}
+
+
+               
+
+
